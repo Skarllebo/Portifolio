@@ -3,6 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
+:root{
+    --cor-primaria: #000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+}
+
 *{
     margin: 0; /*RESET - RETIRA A MARGEM DA BOX*/
     padding: 0; /*RESET - RETIRA O ESPAÇO ENTRE O CONTEÚDO E A MARGEM*/
@@ -11,12 +18,12 @@
 body {
     /* height: 100vh; USA 100% DA ALTURA DO VIEWPORT */
     box-sizing: border-box; /*NÃO PERMITE QUE O CONTEÚDO SAIA DO ELEMENTO PAI, ENCOLHENDO-O*/
-    background-color: black; /*COR DO FUNDO*/
-    color: white; /*COR DAS LETRAS*/
+    background-color: var(--cor-primaria); /*COR DO FUNDO*/
+    color: var(--cor-secundaria); /*COR DAS LETRAS*/
 }
 
 .cabecalho {
-    padding: 2% 0% 0% 8%;
+    padding: 2% 0% 0% 15%;
 }
 
 .cabecalho__menu {
@@ -28,13 +35,13 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 24;
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--cor-terciaria);
     text-decoration: none;
 }
 
 .apresentacao {
     /* margin: 10% 8%; MARGEM DA CLASSE EM ALTURA E LARGURA */
-    padding: 10% 8%;
+    padding: 10% 15%; /*ESPAÇO ENTRE OS CONTEÚDOS*/
     display: flex; /*PROPRIEDADE QUE ORGANIZA OS ELEMENTOS*/
     align-items: center; /*ALINHAMENTO DA PROPRIEDADE DA CLASSE*/
     justify-content: space-between; /*ESPAÇO ENTRE OS ELEMENTOS DA FLEXBOX*/
@@ -53,7 +60,7 @@ body {
 }
 
 .titulo-destaque {
-    color: #22D4FD; /*COR DA CLASSE*/
+    color: var(--cor-terciaria); /*COR DA CLASSE*/
 }
 
 .apresentacao__conteudo__texto {
@@ -73,12 +80,12 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    border: 2px solid #22D4FD; /*BORDA COM TAMANHO DA ESPESSURA, LINHA E COR*/
+    border: 2px solid var(--cor-terciaria); /*BORDA COM TAMANHO DA ESPESSURA, LINHA E COR*/
     width: 378px; /*TAMANHO DOS BOTÕES*/
     text-align: center; /*ALINHAMENTO DO TEXTO*/
     border-radius: 8px; /*ARREDONDAMENTO DAS BORDAS*/
     padding: 21.5px 0; /*DISTANCIA ENTRE O CONTEÚDO E A MARGEM EM ALTURA E LARGURA*/
-    color: #F6F6F6; /*COR DO TEXTO*/
+    color: var(--cor-secundaria); /*COR DO TEXTO*/
     font-family: 'Montserrat', sans-serif; /*ESPECIFICAÇÃO DA FONTE*/
     font-weight: 600; /*PESO DA FONTE*/
     text-decoration: none;
@@ -89,12 +96,12 @@ body {
     font-size: 24px;
 }
 .apresentacao__links__link:hover{
-    background-color: #272727;
+    background-color: var (--cor-hover);
 }
 
 .rodape{
-    color:black;
-    background-color: #22D4FD;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
     text-align: center;
     padding: 24px;
     font-family: 'Montserrat', sans-serif;
