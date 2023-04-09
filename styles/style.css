@@ -33,7 +33,7 @@ body {
 
 .cabecalho__menu__link {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -45,17 +45,18 @@ body {
     display: flex; /*PROPRIEDADE QUE ORGANIZA OS ELEMENTOS*/
     align-items: center; /*ALINHAMENTO DA PROPRIEDADE DA CLASSE*/
     justify-content: space-between; /*ESPAÇO ENTRE OS ELEMENTOS DA FLEXBOX*/
+    gap: 82px;
 }
 
 .apresentacao__conteudo {
-    width: 615px; /*LARGURA DO CONTEÚDO - FIGMA*/
+    width: 50%; /*LARGURA DO CONTEÚDO - FIGMA*/
     display: flex;
     flex-direction: column; /*FAZ COM QUE O SENTIDO DA FLEX FIQUE NA VERTICAL*/
     gap: 40px; /*PROPRIEDADE DA FLEXBOX QUE DETERMINA O ESPAÇAMENTO*/
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 36px; /*TAMANHO DA FONTE*/
+    font-size: 2.25rem; /*TAMANHO DA FONTE*/
     font-family: 'Krona One', sans-serif; /*ESPECIFICAÇÃO DA FONTE*/
 }
 
@@ -64,7 +65,7 @@ body {
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -73,6 +74,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap:32px;
+
 }
 
 .apresentacao__links__link {
@@ -81,7 +83,7 @@ body {
     justify-content: center;
     gap: 16px;
     border: 2px solid var(--cor-terciaria); /*BORDA COM TAMANHO DA ESPESSURA, LINHA E COR*/
-    width: 378px; /*TAMANHO DOS BOTÕES*/
+    width: 50%; /*TAMANHO DOS BOTÕES*/
     text-align: center; /*ALINHAMENTO DO TEXTO*/
     border-radius: 8px; /*ARREDONDAMENTO DAS BORDAS*/
     padding: 21.5px 0; /*DISTANCIA ENTRE O CONTEÚDO E A MARGEM EM ALTURA E LARGURA*/
@@ -93,7 +95,7 @@ body {
 .apresentacao__conteudo__subtitulo{
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .apresentacao__links__link:hover{
     background-color: var (--cor-hover);
@@ -106,5 +108,25 @@ body {
     padding: 24px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 24;
+    font-size: 1.5rem;
+}
+
+.apresentacao__imagem{
+    width: 50%;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+            flex-direction: column-reverse;
+            padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
 }
